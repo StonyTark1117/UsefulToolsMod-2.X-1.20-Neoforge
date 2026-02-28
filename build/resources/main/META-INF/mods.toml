@@ -1,0 +1,39 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for NeoForge 1.20.2 it will be the FML version
+loaderVersion="[1,)" #mandatory
+# The license for your mod
+license="CC0-1.0"
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
+# The modid of the mod
+modId="usefultoolsmod" #mandatory
+# The version number of the mod
+version="2.1.02-1.20.2-neoforge" #mandatory
+# A display name for the mod
+displayName="The Useful Tools Mod" #mandatory
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="grenade.png" #optional
+# A text field displayed in the mod UI
+authors="stonytark_mkii" #optional
+# The description text for the mod (multi line!)
+description='''A simple mod adding various tools and armor based on reinforced versions of common materials.'''
+
+# Dependencies for this mod
+[[dependencies.usefultoolsmod]] #optional
+    # the modid of the dependency
+    modId="neoforge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the NeoForge dependency
+    versionRange="[20.2,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.usefultoolsmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.2,1.21)"
+    ordering="NONE"
+    side="BOTH"
