@@ -1,0 +1,8 @@
+JVM Args:          "-Xmx4g"
+Run Args:          "-log=error", "-din=1", "-rbr=1", "-dgs=1", "-asc=1", "-rsy=1", "-iec=1", "-jvn=1", "-iib=1", "-bsm=1", "-dcl=1", "-nls=1", "-cfg", "/home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/listLibraries/libraries.txt", "/home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/rename/output.jar", "/home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/decompile/output.jar"
+JVM:               /usr/lib/jvm/java-17-openjdk/bin/java
+Classpath:         /home/braydon/.gradle/caches/modules-2/files-2.1/org.vineflower/vineflower/1.9.3/d6b7b39735d956810bd16c2492bdc68b4cd0d2dd/vineflower-1.9.3.jar
+Working Dir:       /home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/decompile
+Main Class:        org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler
+Program log file:  /home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/decompile/log.log
+Output file:       /home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/decompile/output.jar

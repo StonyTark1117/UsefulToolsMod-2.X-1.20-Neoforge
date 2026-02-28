@@ -1,0 +1,8 @@
+JVM Args:          
+Run Args:          "--input", "/home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/merge/output.jar", "--output", "/home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/rename/output.jar", "--map", "/home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/mergeMappings/output.tsrg", "--cfg", "/home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/listLibraries/libraries.txt", "--ann-fix", "--ids-fix", "--src-fix", "--record-fix"
+JVM:               /usr/lib/jvm/java-17-openjdk/bin/java
+Classpath:         /home/braydon/.gradle/caches/modules-2/files-2.1/net.neoforged/AutoRenamingTool/1.0.7/16fc47d7dc69cc4f0d4248c8f8b16c69894387e/AutoRenamingTool-1.0.7-all.jar
+Working Dir:       /home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/rename
+Main Class:        net.minecraftforge.fart.Main
+Program log file:  /home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/rename/log.log
+Output file:       /home/braydon/Useful-Tools/UsefulToolsMod-2.X-1.20-Neoforge/build/neoForm/neoFormJoined1.20.2-20231019.002635/steps/rename/output.jar
