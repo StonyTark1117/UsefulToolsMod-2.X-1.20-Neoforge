@@ -13,6 +13,8 @@ modId="${mod_id}" #mandatory
 version="${mod_version}" #mandatory
 # A display name for the mod
 displayName="${mod_name}" #mandatory
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="grenade.png" #optional
 # A text field displayed in the mod UI
 authors="${mod_authors}" #optional
 # The description text for the mod (multi line!)

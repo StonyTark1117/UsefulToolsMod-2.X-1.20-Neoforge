@@ -5,6 +5,7 @@ import com.stonytark.usefultoolsmod.UsefultoolsMod;
 import com.stonytark.usefultoolsmod.entity.ModEntities;
 import com.stonytark.usefultoolsmod.entity.client.GhostModel;
 import com.stonytark.usefultoolsmod.entity.custom.GhostEntity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.levelgen.Heightmap;
