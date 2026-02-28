@@ -3,6 +3,6 @@ Specification-Title: usefultoolsmod
 Specification-Vendor: stonytark_mkii
 Specification-Version: 1
 Implementation-Title: UsefulToolsMod-2.X-1.20-Neoforge
-Implementation-Version: 2.1.02-1.20.2-neoforge
+Implementation-Version: 2.1.0-1.20.2-neoforge
 Implementation-Vendor: stonytark_mkii
 

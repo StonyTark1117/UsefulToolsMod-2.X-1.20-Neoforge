@@ -10,7 +10,7 @@ license="CC0-1.0"
 # The modid of the mod
 modId="usefultoolsmod" #mandatory
 # The version number of the mod
-version="2.1.02-1.20.2-neoforge" #mandatory
+version="2.1.0-1.20.2-neoforge" #mandatory
 # A display name for the mod
 displayName="The Useful Tools Mod" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
