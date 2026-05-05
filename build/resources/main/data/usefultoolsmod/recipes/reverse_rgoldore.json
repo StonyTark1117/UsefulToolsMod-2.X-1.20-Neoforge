@@ -15,7 +15,7 @@
     "AAA"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:rgoldore"
-  }
+  },
+  "show_notification": true
 }

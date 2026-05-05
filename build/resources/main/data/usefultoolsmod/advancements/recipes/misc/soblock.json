@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:obingot"]
+            "items": [
+              "usefultoolsmod:obingot"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:soblock"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -46,11 +46,41 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     // Put repositories for dependencies here.
     // NeoGradle automatically adds the NeoForge maven and Maven Central for you.
+    maven { // JEI
+        url "https://maven.blamejared.com/"
+    }
+    maven { // Jade (Modrinth)
+        url "https://api.modrinth.com/maven"
+        content { includeGroup "maven.modrinth" }
+    }
+    maven { // REI
+        url "https://maven.shedaniel.me/"
+    }
+    maven { // Architectury (REI dependency)
+        url "https://maven.architectury.dev/"
+    }
 }
 
 dependencies {
     // Specify the version of NeoForge to use.
     implementation "net.neoforged:neoforge:${neo_version}"
+
+    // JEI — compile against API only (no NeoForge runtime build exists for 1.20.2;
+    // JEI NeoForge builds start at 1.20.4. The jei-1.20.2-forge jar requires Forge's
+    // FML loader and cannot load on NeoForge.)
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+
+    // Jade — compile against API only, full jar at runtime for testing.
+    // WTHIT does not have an official build compatible with NeoForge 1.20.2,
+    // so this project mirrors the Forge sibling's choice of Jade.
+    compileOnly "maven.modrinth:jade:${jade_version}"
+    runtimeOnly "maven.modrinth:jade:${jade_version}"
+
+    // REI — compile against API + transitive deps, full jar at runtime for testing
+    compileOnly "me.shedaniel:RoughlyEnoughItems-api-neoforge:${rei_version}"
+    compileOnly "me.shedaniel.cloth:cloth-config-neoforge:12.0.111"
+    compileOnly "dev.architectury:architectury-neoforge:10.0.17"
+    runtimeOnly "me.shedaniel:RoughlyEnoughItems-neoforge:${rei_version}"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

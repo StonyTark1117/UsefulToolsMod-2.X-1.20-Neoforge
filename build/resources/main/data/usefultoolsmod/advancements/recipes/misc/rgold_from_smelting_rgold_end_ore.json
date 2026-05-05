@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:rgold_end_ore"]
+            "items": [
+              "usefultoolsmod:rgold_end_ore"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:rgold_from_smelting_rgold_end_ore"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

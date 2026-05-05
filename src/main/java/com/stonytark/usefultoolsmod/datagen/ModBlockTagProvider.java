@@ -29,12 +29,28 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RGOLD_DEEPSLATE_ORE.get())
                 .add(ModBlocks.SEMBLOCK.get())
                 .add(ModBlocks.SOBLOCK.get())
-                .add(ModBlocks.LBLOCK.get());
+                .add(ModBlocks.LBLOCK.get())
+                .add(ModBlocks.SPECTRAL_INFUSER.get())
+                .add(ModBlocks.ECTOPLASM_BLOCK.get())
+                .add(ModBlocks.HGLOW_BLOCK.get())
+                .add(ModBlocks.RAW_RGOLD_BLOCK.get())
+                .add(ModBlocks.REFINED_ECTOPLASM_BLOCK.get())
+                .add(ModBlocks.HARDENED_COAL_BLOCK.get())
+                .add(ModBlocks.OBSHARD_BLOCK.get())
+                .add(ModBlocks.CALCIFIED_AMETHYST_BLOCK.get())
+                .add(ModBlocks.GLACIAL_SHARD_BLOCK.get())
+                .add(ModBlocks.POLISHED_QUARTZ_BLOCK.get())
+                .add(ModBlocks.POLISHED_PRISMARINE_BLOCK.get());
+
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.COAL_DUST_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RGOLDBLOCK.get())
                 .add(ModBlocks.LBLOCK.get())
-                .add(ModBlocks.HRBLOCK.get());
+                .add(ModBlocks.HRBLOCK.get())
+                .add(ModBlocks.HGLOW_BLOCK.get())
+                .add(ModBlocks.OBSHARD_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.SOBLOCK.get())
@@ -44,9 +60,20 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RGOLDORE.get())
                 .add(ModBlocks.RGOLD_NETHER_ORE.get())
                 .add(ModBlocks.RGOLD_END_ORE.get())
-                .add(ModBlocks.RGOLD_DEEPSLATE_ORE.get());
+                .add(ModBlocks.RGOLD_DEEPSLATE_ORE.get())
+                .add(ModBlocks.SPECTRAL_INFUSER.get())
+                .add(ModBlocks.ECTOPLASM_BLOCK.get())
+                .add(ModBlocks.RAW_RGOLD_BLOCK.get())
+                .add(ModBlocks.REFINED_ECTOPLASM_BLOCK.get())
+                .add(ModBlocks.CALCIFIED_AMETHYST_BLOCK.get())
+                .add(ModBlocks.GLACIAL_SHARD_BLOCK.get())
+                .add(ModBlocks.POLISHED_QUARTZ_BLOCK.get())
+                .add(ModBlocks.POLISHED_PRISMARINE_BLOCK.get());
 
         tag(ModTags.Blocks.NEEDS_HRED_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.NEEDS_HGLOW_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
         tag(ModTags.Blocks.NEEDS_JEM_TOOL)
@@ -71,5 +98,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.NEEDS_SOB_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(Blocks.BEDROCK);
+
+        tag(ModTags.Blocks.NEEDS_ECTO_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
     }
 }

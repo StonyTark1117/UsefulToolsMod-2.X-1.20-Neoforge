@@ -12,7 +12,7 @@
     "   "
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:rgold_helmet"
-  }
+  },
+  "show_notification": true
 }

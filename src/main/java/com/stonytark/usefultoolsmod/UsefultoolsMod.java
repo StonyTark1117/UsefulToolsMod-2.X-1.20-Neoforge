@@ -2,10 +2,16 @@ package com.stonytark.usefultoolsmod;
 
 import com.mojang.logging.LogUtils;
 import com.stonytark.usefultoolsmod.block.ModBlocks;
+import com.stonytark.usefultoolsmod.block.entity.ModBlockEntityTypes;
+import com.stonytark.usefultoolsmod.block.entity.ModMenuTypes;
+import com.stonytark.usefultoolsmod.client.ClientConfigRegistration;
+import com.stonytark.usefultoolsmod.client.SpectralInfuserScreen;
 import com.stonytark.usefultoolsmod.entity.ModEntities;
 import com.stonytark.usefultoolsmod.entity.client.GhostRenderer;
 import com.stonytark.usefultoolsmod.item.ModCreativeModeTabs;
 import com.stonytark.usefultoolsmod.item.ModItems;
+import com.stonytark.usefultoolsmod.trigger.ModTriggers;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
@@ -17,6 +23,7 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -41,7 +48,10 @@ public class UsefultoolsMod
         //Keep creative tabs above others just in case
         ModCreativeModeTabs.register(modEventBus);
 
+        ModBlockEntityTypes.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModTriggers.register();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -51,8 +61,14 @@ public class UsefultoolsMod
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
-        // Register our mod's ModConfigSpec so that NeoForge can create and load the config file for us
+        // Register our mod's ModConfigSpec so that NeoForge can create and load the config file for us.
+        // COMMON so the file is loaded outside a world (editable from the title-screen Mods menu).
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        // Register the in-game config screen factory (client-only).
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            ClientConfigRegistration.register();
+        }
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -63,7 +79,9 @@ public class UsefultoolsMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.ECTOPLASM.get());
             event.accept(ModItems.RGOLD.get());
+            event.accept(ModItems.RAW_RGOLD.get());
             event.accept(ModItems.OBSHARD.get());
             event.accept(ModItems.SEM.get());
             event.accept(ModItems.OBINGOT.get());
@@ -80,6 +98,9 @@ public class UsefultoolsMod
             event.accept(ModBlocks.SEMBLOCK.get());
             event.accept(ModBlocks.SOBLOCK.get());
             event.accept(ModBlocks.LBLOCK.get());
+        }
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.SPECTRAL_INFUSER.get());
         }
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.RGOLDORE.get());
@@ -104,6 +125,8 @@ public class UsefultoolsMod
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.GHOST.get(), GhostRenderer::new);
+            event.enqueueWork(() ->
+                    MenuScreens.register(ModMenuTypes.SPECTRAL_INFUSER_MENU.get(), SpectralInfuserScreen::new));
         }
     }
 }

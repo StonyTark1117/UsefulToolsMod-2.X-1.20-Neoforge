@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:rgold"]
+            "items": [
+              "usefultoolsmod:rgold"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:rgold_leggings"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -12,7 +12,7 @@
     "AAA"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:lblock"
-  }
+  },
+  "show_notification": true
 }

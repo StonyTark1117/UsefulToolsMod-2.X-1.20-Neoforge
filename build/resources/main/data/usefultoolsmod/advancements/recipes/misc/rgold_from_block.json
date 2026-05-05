@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:rgoldblock"]
+            "items": [
+              "usefultoolsmod:rgoldblock"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:rgold_from_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

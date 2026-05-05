@@ -1,6 +1,7 @@
 package com.stonytark.usefultoolsmod.block;
 
 import com.stonytark.usefultoolsmod.UsefultoolsMod;
+import com.stonytark.usefultoolsmod.block.custom.SpectralInfuserBlock;
 import com.stonytark.usefultoolsmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -57,6 +58,57 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
+    // Storage blocks
+    public static final DeferredHolder<Block, Block> HGLOW_BLOCK = registerBlock("hglow_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+    public static final DeferredHolder<Block, Block> RAW_RGOLD_BLOCK = registerBlock("raw_rgold_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredHolder<Block, Block> ECTOPLASM_BLOCK = registerBlock("ectoplasm_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2.5f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+
+    public static final DeferredHolder<Block, Block> REFINED_ECTOPLASM_BLOCK = registerBlock("refined_ectoplasm_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+
+    public static final DeferredHolder<Block, Block> HARDENED_COAL_BLOCK = registerBlock("hardened_coal_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredHolder<Block, Block> COAL_DUST_BLOCK = registerBlock("coal_dust_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.SAND)));
+
+    public static final DeferredHolder<Block, Block> OBSHARD_BLOCK = registerBlock("obshard_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredHolder<Block, Block> CALCIFIED_AMETHYST_BLOCK = registerBlock("calcified_amethyst_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.5f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredHolder<Block, Block> GLACIAL_SHARD_BLOCK = registerBlock("glacial_shard_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.GLASS)));
+
+    public static final DeferredHolder<Block, Block> POLISHED_QUARTZ_BLOCK = registerBlock("polished_quartz_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredHolder<Block, Block> POLISHED_PRISMARINE_BLOCK = registerBlock("polished_prismarine_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredHolder<Block, Block> SPECTRAL_INFUSER = registerBlock("spectral_infuser",
+            () -> new SpectralInfuserBlock(BlockBehaviour.Properties.of()
+                    .strength(3.5f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .lightLevel(state -> state.getValue(SpectralInfuserBlock.LIT) ? 13 : 0)));
 
     private static <T extends Block> DeferredHolder<Block, T> registerBlock(String name, Supplier<T> block){
         DeferredHolder<Block, T> toReturn = BLOCKS.register(name, block);

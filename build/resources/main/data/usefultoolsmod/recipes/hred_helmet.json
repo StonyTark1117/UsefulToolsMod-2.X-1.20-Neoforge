@@ -12,7 +12,7 @@
     "   "
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:hred_helmet"
-  }
+  },
+  "show_notification": true
 }

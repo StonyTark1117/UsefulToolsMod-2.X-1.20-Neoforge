@@ -46,6 +46,22 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.RLAPIS_HELMET.get())
                 .add(ModItems.RLAPIS_CHESTPLATE.get())
                 .add(ModItems.RLAPIS_LEGGINGS.get())
-                .add(ModItems.RLAPIS_BOOTS.get());
+                .add(ModItems.RLAPIS_BOOTS.get())
+                .add(ModItems.HGLOW_HELMET.get())
+                .add(ModItems.HGLOW_CHESTPLATE.get())
+                .add(ModItems.HGLOW_LEGGINGS.get())
+                .add(ModItems.HGLOW_BOOTS.get())
+                .add(ModItems.COAL_HELMET.get())
+                .add(ModItems.COAL_CHESTPLATE.get())
+                .add(ModItems.COAL_LEGGINGS.get())
+                .add(ModItems.COAL_BOOTS.get())
+                .add(ModItems.FNI_HELMET.get())
+                .add(ModItems.FNI_CHESTPLATE.get())
+                .add(ModItems.FNI_LEGGINGS.get())
+                .add(ModItems.FNI_BOOTS.get())
+                .add(ModItems.ECTO_HELMET.get())
+                .add(ModItems.ECTO_CHESTPLATE.get())
+                .add(ModItems.ECTO_LEGGINGS.get())
+                .add(ModItems.ECTO_BOOTS.get());
     }
 }

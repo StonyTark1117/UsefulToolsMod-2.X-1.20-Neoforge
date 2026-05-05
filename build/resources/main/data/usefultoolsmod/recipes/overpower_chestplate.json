@@ -21,7 +21,7 @@
     "ADB"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:overpower_chestplate"
-  }
+  },
+  "show_notification": true
 }

@@ -1,10 +1,380 @@
-#Whether to log the dirt block on common setup
-logDirtBlock = true
-#A magic number
-#Range: > 0
-magicNumber = 42
-#What you want the introduction message to be for the magic number
-magicNumberIntroduction = "The magic number is... "
-#A list of items to log on common setup.
-items = ["minecraft:iron_ingot"]
+
+[explosives]
+	#Enable the Explosives set (Dynamite, Grenade).
+	enabled = true
+
+[obsidian]
+	#Enable the Obsidian set (Rough/Polished Obsidian tools, Obsidian armor).
+	enabled = true
+
+[emerald]
+	#Enable the Emerald set (Polished/Rough Emerald tools, Emerald armor).
+	enabled = true
+
+[lapis]
+	#Enable the Reinforced Lapis set (tools + armor).
+	enabled = true
+
+[ferrousGold]
+	#Enable the Ferrous Gold set (tools, armor, ores, blocks).
+	enabled = true
+
+[hardenedRedstone]
+	#Enable the Hardened Redstone set (tools + armor).
+	enabled = true
+
+[hardenedGlowstone]
+	#Enable the Hardened Glowstone set (tools + armor).
+	enabled = true
+
+[overpower]
+	#Enable the Overpower set (tools + armor).
+	enabled = true
+	#If false, Overpower tools will not grant status effects while held.
+	#The tools themselves still function normally.
+	toolEffectsEnabled = true
+	#If false, Overpower armor will not grant status effects when wearing a full set.
+	#The armor itself still provides protection.
+	armorEffectsEnabled = true
+
+[ghost]
+	#If false, ghosts will not spawn naturally in the world.
+	#Ghost spawn eggs and ectoplasm will also be hidden from the creative tab.
+	enabled = true
+	#Fraction of natural ghost spawn attempts that actually succeed (0.0 - 1.0).
+	#Higher values make ghosts more common. Default is 0.15.
+	#Range: 0.0 ~ 1.0
+	spawnChance = 0.15
+
+[spectralInfuser]
+	#Enable the Spectral Infuser block (ectoplasm infusion station).
+	enabled = true
+	#If false, ectoplasm-infused non-weapon tools will not grant
+	#status effects while held (Night Vision, Haste, Luck).
+	infusedToolEffectsEnabled = true
+
+[ectoplasmSet]
+	#Enable the Ectoplasm set (Refined Ectoplasm, tools + armor).
+	enabled = true
+	#If false, wearing ectoplasm armor or ectoplasm-infused armor
+	#will not make ghosts ignore the player.
+	ghostAvoidanceEnabled = true
+	#If true, wearing a full set of ectoplasm armor allows the player
+	#to phase through walls that are 3 blocks thick or less.
+	wallPhasingEnabled = true
+
+[rawMetalRough]
+	#Enable the Raw Metal Rough tool sets
+	#(Raw Gold, Raw Copper, Raw Iron, Raw Ferrous Gold, Netherite Scrap).
+	enabled = true
+
+[roughCrystal]
+	#Enable the Rough Crystal tool sets
+	#(Rough Amethyst, Rough Quartz, Rough Prismarine).
+	enabled = true
+
+[snow]
+	#Enable the Snow tool set.
+	enabled = true
+	#If false, snow tools will not melt (lose durability) over time when held.
+	#Also disables the fire-protection durability trade-off.
+	meltEffectsEnabled = true
+
+[polishedCrystal]
+	#Enable the Polished Crystal sets (Calcite Amethyst, Polished Quartz — tools + armor).
+	enabled = true
+
+[ice]
+	#Enable the Ice / Glacial set (tools + armor).
+	enabled = true
+	#If false, ice tools/armor will not melt over time
+	#and will not provide fire protection.
+	effectsEnabled = true
+
+[pprism]
+	#Enable the Polished Prismarine set (tools + armor).
+	enabled = true
+	#If false, polished prismarine tools/armor will not grant
+	#underwater status effects (Water Breathing, Haste, Dolphin's Grace, etc.).
+	waterEffectsEnabled = true
+
+[flint]
+	#Enable the Rough Flint tool set.
+	enabled = true
+
+[fni]
+	#Enable the Flint-Iron / FNI set (tools + armor).
+	enabled = true
+	#If false, FNI tools will not place fire on sneak+right-click,
+	#FNI boots will not ignite flammable blocks, and the full FNI set
+	#will not reduce fire duration.
+	fireEffectsEnabled = true
+
+[woodVariants]
+	#Enable all 11 Wood Variant tool sets
+	#(Oak, Spruce, Birch, Jungle, Acacia, Dark Oak, Mangrove,
+	# Cherry, Bamboo, Crimson, Warped).
+	enabled = true
+
+[stoneVariants]
+	#Enable all 13 Stone Rock Variant tool sets
+	#(Andesite, Basalt, Blackstone, Calcite, Deepslate, Diorite,
+	# End Stone, Granite, Netherrack, Sandstone, Smooth Basalt,
+	# Terracotta, Tuff).
+	enabled = true
+
+[paper]
+	#Enable the Paper tool set.
+	enabled = true
+	#Paper tool effects (shatter chance, paper cuts, Weakness).
+	effectsEnabled = true
+
+[feather]
+	#Enable the Feather tool set.
+	enabled = true
+	#Feather tool effects (Slow Falling, Levitation on hit).
+	effectsEnabled = true
+
+[glass]
+	#Enable the Glass tool set.
+	enabled = true
+	#Glass tool effects (bonus damage, shatter AoE).
+	effectsEnabled = true
+
+[rabbitHide]
+	#Enable the Rabbit Hide armor set.
+	enabled = true
+	#Rabbit Hide armor effects (Jump Boost, Speed, no fall damage full set).
+	effectsEnabled = true
+
+[cactus]
+	#Enable the Cactus set (tools + armor).
+	enabled = true
+	#Cactus effects (Poison on hit, thorns, hostile aura).
+	effectsEnabled = true
+
+[sponge]
+	#Enable the Sponge tool set.
+	enabled = true
+	#Sponge tool effects (water absorption, bonus water damage).
+	effectsEnabled = true
+
+[bone]
+	#Enable the Bone set (tools + armor).
+	enabled = true
+	#Bone effects (undead bonus damage, Weakness aura vs undead).
+	effectsEnabled = true
+
+[clay]
+	#Enable the Clay set (tools + armor).
+	enabled = true
+	#Clay armor effects (Speed, Jump, Resistance, Luck, Absorption full set).
+	effectsEnabled = true
+
+[netherWart]
+	#Enable the Nether Wart tool set.
+	enabled = true
+	#Nether Wart effects (Wither on hit, Hunger while held).
+	effectsEnabled = true
+
+[brick]
+	#Enable the Brick set (tools + armor). Stats only, no special effects.
+	enabled = true
+
+[netherBrick]
+	#Enable the Nether Brick set (tools + armor).
+	enabled = true
+	#Nether Brick effects (fire on hit, Fire Resistance, reactive fire).
+	effectsEnabled = true
+
+[pointedDripstone]
+	#Enable the Pointed Dripstone tool set.
+	enabled = true
+	#Pointed Dripstone effects (armor piercing, enhanced crits).
+	effectsEnabled = true
+
+[copper]
+	#Enable the Copper set (tools + armor).
+	enabled = true
+	#Copper armor effects (rain/thunderstorm buffs).
+	effectsEnabled = true
+
+[phantom]
+	#Enable the Phantom Membrane set (tools + armor).
+	enabled = true
+	#Phantom effects (Slow Falling, night bonuses, Phantoms ignore full set).
+	effectsEnabled = true
+
+[magmaCream]
+	#Enable the Magma Cream set (tools + armor).
+	enabled = true
+	#Magma Cream effects (fire + Slowness on hit, Fire Resistance, reactive fire).
+	effectsEnabled = true
+
+[slime]
+	#Enable the Slime set (tools + armor).
+	enabled = true
+	#Slime effects (knockback, bouncing, no fall damage, reactive knockback).
+	effectsEnabled = true
+
+[blaze]
+	#Enable the Blaze Rod set (tools + armor).
+	enabled = true
+	#Blaze effects (fire on hit, Fire Resistance, Strength full set, reactive fire).
+	effectsEnabled = true
+
+[nautilus]
+	#Enable the Nautilus Shell set (tools + armor).
+	enabled = true
+	#Nautilus effects (Conduit Power, Water Breathing, Dolphins Grace, aquatic mobs ignore).
+	effectsEnabled = true
+
+[purpur]
+	#Enable the Purpur set (tools + armor).
+	enabled = true
+	#Purpur effects (teleport on hit, dodge, no fall damage, Night Vision).
+	effectsEnabled = true
+
+[ghastTear]
+	#Enable the Ghast Tear set (tools + armor).
+	enabled = true
+	#Ghast Tear effects (lifesteal, Regeneration, Absorption).
+	effectsEnabled = true
+
+[eyeOfEnder]
+	#Enable the Eye of Ender set (tools + armor).
+	enabled = true
+	#Eye of Ender effects (Blindness on hit, Night Vision, Endermen neutral, entity Glowing).
+	effectsEnabled = true
+
+[shulker]
+	#Enable the Shulker Shell set (tools + armor).
+	enabled = true
+	#Shulker effects (Levitation on hit, quasi-flight, reactive Levitation).
+	effectsEnabled = true
+
+[turtleScute]
+	#Enable the Turtle Scute armor set.
+	enabled = true
+	#Turtle Scute armor effects (Water Breathing, Conduit Power, Guardians ignore).
+	effectsEnabled = true
+
+[echoShard]
+	#Enable the Echo Shard set (tools + armor).
+	enabled = true
+	#Echo Shard effects (Darkness on hit, entity Glowing, Warden neutral, reactive Darkness).
+	effectsEnabled = true
+
+[dragonBreath]
+	#Enable the Dragon's Breath set (tools + armor).
+	enabled = true
+	#Dragon's Breath effects (Wither + Poison on hit, AoE cloud, Strength, reactive Wither + fire).
+	effectsEnabled = true
+
+[leather]
+	#Enable the Leather tool set (tools only, very weak).
+	enabled = true
+
+[coal]
+	#Enable the Coal set (Coal Dust, Hardened Coal, tools + armor).
+	enabled = true
+	#If false, coal tools and armor will NOT have the negative burning effects
+	#(extended fire, durability loss, damage to holder). They can still be used
+	#as furnace fuel.
+	fireEffectsEnabled = true
+
+[cake]
+	#Enable the Cake set (tools + armor). It's cake.
+	enabled = true
+	#If false, cake tools and armor will not drain durability to restore hunger
+	#when the player is starving.
+	hungerEffectsEnabled = true
+	#If false, cake armor will not grant per-piece status effects
+	#(Speed, Jump Boost, Regeneration, Saturation) or the full set Absorption bonus.
+	armorEffectsEnabled = true
+
+[foodSets]
+	#If false, ALL food tools/armor (including cake) will not drain durability
+	#to restore hunger when starving. Individual set toggles still apply.
+	hungerDrainEnabled = true
+
+[bread]
+	#Enable the Bread set (tools + armor).
+	enabled = true
+	#Bread armor effects (Speed, Jump Boost, Saturation, Luck, Hunger immunity).
+	armorEffectsEnabled = true
+
+[driedKelp]
+	#Enable the Dried Kelp set (tools + armor).
+	enabled = true
+	#Dried Kelp armor effects (aquatic buffs, Conduit Power full set).
+	armorEffectsEnabled = true
+
+[rottenFlesh]
+	#Enable the Rotten Flesh set (tools + armor).
+	enabled = true
+	#Rotten Flesh armor effects (Slow Falling, Fire Resist, Resistance).
+	armorEffectsEnabled = true
+	#Full Rotten Flesh armor makes undead mobs ignore the player.
+	undeadNeutralEnabled = true
+
+[melon]
+	#Enable the Melon set (tools + armor).
+	enabled = true
+	#Melon armor effects (Speed, Jump Boost, Regen, passive hunger restore).
+	armorEffectsEnabled = true
+
+[sweetBerries]
+	#Enable the Sweet Berry set (tools + armor).
+	enabled = true
+	#Sweet Berry armor effects (Speed, Regen, Saturation).
+	armorEffectsEnabled = true
+	#Full Sweet Berry armor reflects 1 damage to attackers.
+	thornsEnabled = true
+
+[pumpkinPie]
+	#Enable the Pumpkin Pie set (tools + armor).
+	enabled = true
+	#Pumpkin Pie armor effects (Speed, Jump Boost, Absorption, Luck).
+	armorEffectsEnabled = true
+	#Pumpkin Pie helmet prevents Enderman aggro.
+	endermanAvoidanceEnabled = true
+
+[mushroom]
+	#Enable the Mushroom set (tools + armor).
+	enabled = true
+	#Mushroom armor effects (Haste, Jump Boost, Resistance, Night Vision).
+	armorEffectsEnabled = true
+	#Full Mushroom armor inflicts Nausea on nearby hostile mobs.
+	sporeCloudEnabled = true
+
+[pufferfish]
+	#Enable the Pufferfish set (tools + armor).
+	enabled = true
+	#Pufferfish armor effects (Water Breathing, Conduit Power).
+	armorEffectsEnabled = true
+	#Full Pufferfish armor inflicts Poison on nearby hostile mobs.
+	poisonAuraEnabled = true
+
+[honey]
+	#Enable the Honey set (tools + armor).
+	enabled = true
+	#Honey armor effects (Slow Falling, Resistance, Fire Resist).
+	armorEffectsEnabled = true
+	#Full Honey armor applies Slowness to attackers.
+	stickyEnabled = true
+
+[chorusFruit]
+	#Enable the Chorus Fruit set (tools + armor).
+	enabled = true
+	#Chorus Fruit armor effects (Slow Falling, Speed, Resistance, Night Vision).
+	armorEffectsEnabled = true
+	#Full Chorus Fruit armor has a chance to teleport the player when hit.
+	teleportEnabled = true
+
+[goldenApple]
+	#Enable the Golden Apple set (tools + armor).
+	enabled = true
+	#Golden Apple armor effects (Speed, Resistance, Regen, Fire Resist, Absorption).
+	armorEffectsEnabled = true
 

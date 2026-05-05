@@ -12,7 +12,7 @@
     "   "
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:rlapis_helmet"
-  }
+  },
+  "show_notification": true
 }

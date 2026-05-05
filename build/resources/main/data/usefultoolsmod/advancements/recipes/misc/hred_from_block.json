@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:hrblock"]
+            "items": [
+              "usefultoolsmod:hrblock"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:hred_from_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

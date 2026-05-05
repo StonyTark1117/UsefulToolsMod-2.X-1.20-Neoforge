@@ -12,7 +12,7 @@
     "AAA"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:hrblock"
-  }
+  },
+  "show_notification": true
 }

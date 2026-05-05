@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:sem"]
+            "items": [
+              "usefultoolsmod:sem"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:semblock"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

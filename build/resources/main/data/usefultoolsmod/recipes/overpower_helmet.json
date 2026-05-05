@@ -21,7 +21,7 @@
     "CDC"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:overpower_helmet"
-  }
+  },
+  "show_notification": true
 }

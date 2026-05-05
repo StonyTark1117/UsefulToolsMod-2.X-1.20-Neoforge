@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:hred"]
+            "items": [
+              "usefultoolsmod:hred"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:hred_helmet"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

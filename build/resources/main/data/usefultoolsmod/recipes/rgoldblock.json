@@ -12,7 +12,7 @@
     "AAA"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:rgoldblock"
-  }
+  },
+  "show_notification": true
 }

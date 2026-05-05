@@ -24,7 +24,7 @@
     "CB "
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:overpower_shovel"
-  }
+  },
+  "show_notification": true
 }

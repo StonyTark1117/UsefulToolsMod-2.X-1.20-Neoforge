@@ -18,7 +18,7 @@
     "ACA"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:overpower_leggings"
-  }
+  },
+  "show_notification": true
 }

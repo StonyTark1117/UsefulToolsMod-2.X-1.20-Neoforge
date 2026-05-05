@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:obingot"]
+            "items": [
+              "usefultoolsmod:obingot"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:obsidian_leggings"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

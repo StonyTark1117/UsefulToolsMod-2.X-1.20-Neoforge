@@ -12,7 +12,7 @@
     "AAA"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:obsidian_chestplate"
-  }
+  },
+  "show_notification": true
 }

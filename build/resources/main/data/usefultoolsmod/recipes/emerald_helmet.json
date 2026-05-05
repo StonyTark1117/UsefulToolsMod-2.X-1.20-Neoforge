@@ -12,7 +12,7 @@
     "   "
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:emerald_helmet"
-  }
+  },
+  "show_notification": true
 }

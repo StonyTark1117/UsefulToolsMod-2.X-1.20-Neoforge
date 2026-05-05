@@ -11,5 +11,167 @@
     },
     "done": false
   },
+  "usefultoolsmod:recipes/combat/rgold_chestplate": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/reverse_rgold_nether_ore": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/rgold_shovel": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/combat/rgold_helmet": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:root": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/rgold_hoe": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/rgoldblock": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/reverse_rgoldore": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/sem_from_block": {
+    "criteria": {
+      "has_semblock": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:rgold": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/combat/rgold_boots": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/reverse_rgold_deepslate_ore": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/combat/rgold_leggings": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/rgold_axe": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/rgold_pickaxe": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/reverse_rgold_end_ore": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/rgold_sword": {
+    "criteria": {
+      "has_rgold": "2026-03-18 00:40:16 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/recto_hoe": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/spectral_infuser": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/recto_axe": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/recto_shovel": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/recto_pickaxe": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:spectral_infuser": {
+    "criteria": {
+      "has_spectral_infuser": "2026-03-18 01:30:55 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/tools/recto_sword": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/refined_ectoplasm": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:ectoplasm": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
+  "usefultoolsmod:recipes/misc/ectoplasm_block": {
+    "criteria": {
+      "has_ectoplasm": "2026-03-18 01:30:58 -0700"
+    },
+    "done": true
+  },
   "DataVersion": 3578
 }

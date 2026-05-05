@@ -15,7 +15,7 @@
     " A "
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:hred"
-  }
+  },
+  "show_notification": true
 }

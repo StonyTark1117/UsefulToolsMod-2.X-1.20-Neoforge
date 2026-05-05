@@ -38,12 +38,13 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "usefultoolsmod:rgold"
+              "name": "usefultoolsmod:raw_rgold"
             }
           ]
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "usefultoolsmod:blocks/rgoldore"
 }

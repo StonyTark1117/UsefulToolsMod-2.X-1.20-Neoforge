@@ -15,7 +15,7 @@
     "AAA"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:rgold_nether_ore"
-  }
+  },
+  "show_notification": true
 }

@@ -12,7 +12,7 @@
     "AAA"
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:hred_chestplate"
-  }
+  },
+  "show_notification": true
 }

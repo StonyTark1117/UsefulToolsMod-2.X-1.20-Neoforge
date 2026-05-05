@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:rlapis"]
+            "items": [
+              "usefultoolsmod:rlapis"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:rlapis_shovel"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

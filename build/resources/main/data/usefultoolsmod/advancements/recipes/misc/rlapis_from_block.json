@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["usefultoolsmod:lblock"]
+            "items": [
+              "usefultoolsmod:lblock"
+            ]
           }
         ]
       },
@@ -28,5 +30,6 @@
     "recipes": [
       "usefultoolsmod:rlapis_from_block"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

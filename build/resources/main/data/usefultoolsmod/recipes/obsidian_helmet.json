@@ -12,7 +12,7 @@
     "   "
   ],
   "result": {
-    "count": 1,
     "item": "usefultoolsmod:obsidian_helmet"
-  }
+  },
+  "show_notification": true
 }
