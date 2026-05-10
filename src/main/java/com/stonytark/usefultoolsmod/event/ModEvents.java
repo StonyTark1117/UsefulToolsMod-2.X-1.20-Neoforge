@@ -2,6 +2,7 @@ package com.stonytark.usefultoolsmod.event;
 
 import com.stonytark.usefultoolsmod.Config;
 import com.stonytark.usefultoolsmod.entity.custom.GhostEntity;
+import net.minecraft.world.entity.MobSpawnType;
 import com.stonytark.usefultoolsmod.item.ModArmorMaterials;
 import com.stonytark.usefultoolsmod.item.ModItems;
 import com.stonytark.usefultoolsmod.item.custom.CoalArmorItem;
@@ -479,8 +480,17 @@ public class ModEvents {
     @SubscribeEvent
     public static void onFinalizeSpawn(MobSpawnEvent.FinalizeSpawn event) {
         if (!(event.getEntity() instanceof GhostEntity)) return;
-        if (!Config.ghostEnabled
-                || event.getLevel().getRandom().nextDouble() > Config.ghostSpawnChance) {
+        if (!Config.ghostEnabled) {
+            event.setCanceled(true);
+            return;
+        }
+        MobSpawnType reason = event.getSpawnType();
+        boolean isNaturalSpawn = reason == MobSpawnType.NATURAL
+                || reason == MobSpawnType.CHUNK_GENERATION
+                || reason == MobSpawnType.SPAWNER
+                || reason == MobSpawnType.STRUCTURE
+                || reason == MobSpawnType.PATROL;
+        if (isNaturalSpawn && event.getLevel().getRandom().nextDouble() > Config.ghostSpawnChance) {
             event.setCanceled(true);
         }
     }
@@ -894,8 +904,13 @@ public class ModEvents {
         if (EctoplasmInfusionHelper.isInfused(stack)) {
             tips.add(Component.translatable("tooltip.usefultoolsmod.ectoplasm_infused")
                     .withStyle(ChatFormatting.DARK_AQUA));
-            tips.add(Component.translatable("tooltip.usefultoolsmod.ecto_can_damage_ghosts")
-                    .withStyle(ChatFormatting.GRAY));
+            if (stack.getItem() instanceof ArmorItem) {
+                tips.add(Component.translatable("tooltip.usefultoolsmod.ecto_armor_invisibility")
+                        .withStyle(ChatFormatting.DARK_GREEN));
+            } else {
+                tips.add(Component.translatable("tooltip.usefultoolsmod.ecto_can_damage_ghosts")
+                        .withStyle(ChatFormatting.GRAY));
+            }
             if (stack.getItem() instanceof PickaxeItem) {
                 tips.add(Component.translatable("tooltip.usefultoolsmod.spectral_sight")
                         .withStyle(ChatFormatting.GRAY));
@@ -1013,7 +1028,7 @@ public class ModEvents {
             tips.add(Component.translatable("tooltip.usefultoolsmod.ecto_header")
                     .withStyle(ChatFormatting.DARK_AQUA));
             tips.add(Component.translatable("tooltip.usefultoolsmod.ecto_ghost_avoid")
-                    .withStyle(ChatFormatting.GRAY));
+                    .withStyle(ChatFormatting.DARK_GREEN));
             tips.add(Component.translatable("tooltip.usefultoolsmod.ecto_wall_phase")
                     .withStyle(ChatFormatting.DARK_GREEN));
         }
